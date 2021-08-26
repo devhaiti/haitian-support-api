@@ -1,0 +1,7 @@
+{
+  "functions": {
+    "api/test.ts": {
+      "includeFiles": "data.csv"
+    }
+  }
+}
