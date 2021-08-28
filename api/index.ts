@@ -1,5 +1,4 @@
 import { micron, createLambda } from '@yotie/micron';
-import { ApolloServerPluginUsageReportingDisabled } from 'apollo-server-core';
 import { ApolloServer } from 'apollo-server-micro';
 import { applyMiddleware } from 'graphql-middleware';
 import { makeExecutableSchema } from 'graphql-tools';
@@ -20,7 +19,6 @@ const server = new ApolloServer({
       auth: req.auth     //this is populated by the authn middleware
     };
   },
-  plugins: [ApolloServerPluginUsageReportingDisabled()],
   schema
 });
 
