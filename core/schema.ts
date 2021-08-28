@@ -53,11 +53,20 @@ export const typeDefs = gql`
     createdAt: String
   }
 
+  type Stats {
+    destroyedProperties: Int
+    damagedProperties: Int
+    injuries: Int
+    deaths: Int
+    missing: Int
+  }
+
   type Query {
     user(id: ID!): User
     users: [User]
     orgs: [Organizations]
     news: [Article]
+    stats: Stats
   }
 
   type Mutation {

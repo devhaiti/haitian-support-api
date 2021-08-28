@@ -1,7 +1,5 @@
 //@ts-ignore
 import { RESTDataSource } from 'apollo-datasource-rest';
-import axios from 'axios';
-
 export class NiouzDataSource extends RESTDataSource {
 
     constructor() {
